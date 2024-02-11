@@ -1,6 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+
+
+
+/*
 export default function App() {
   return (
     <View style={styles.container}>
@@ -9,6 +13,15 @@ export default function App() {
     </View>
   );
 }
+*/
+
+const Greeting = () => {
+  return(
+    <View styles ={styles.container}>
+      <Text>Roll Upp</Text>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -18,3 +31,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+export default Greeting
