@@ -19,16 +19,11 @@ const Rodgers = ()=> {
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+     
         <h1>
           <Button  onClick = {Rodgers} />
         </h1>
-        <p>
-          Hello world
-        </p>
-     
-      </header>
+    
     </div>
   );
 }
