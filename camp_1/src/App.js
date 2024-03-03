@@ -7,23 +7,28 @@ function Button(){
   )
 }
 
-const Rodgers = ()=> {
-  return(
-    <div>
-      <h1> Rodgers</h1>
-      <p>Part of the few, one of the best</p>
-    </div>
-  )
-}
+const Person = {
+  name : 'Rodgers',
+  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+  mageSize: 90,
+};
 
 function App() {
   return (
     <div className="App">
+
+      <h1>{Person.name}</h1>
      
         <h1>
-          <Button  onClick = {Rodgers} />
+          <Button />
         </h1>
-    
+      <img 
+        src ={Person.imageUrl}
+        // style={{
+        //   width: Person.mageSize,
+        //   height: Person.mageSize
+        // }}
+      />
     </div>
   );
 }
