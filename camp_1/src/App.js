@@ -13,10 +13,22 @@ const Person = {
   mageSize: 90,
 };
 
+function myheader(){
+  return(
+    <div className='nav'>
+      <ul>
+        <li>Home</li>
+        <li>Contact us</li>
+        <li>About us</li>
+      </ul>
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
-
+      <myheader/>
       <h1>{Person.name}</h1>
      
         <h1>
@@ -24,10 +36,10 @@ function App() {
         </h1>
       <img 
         src ={Person.imageUrl}
-        // style={{
-        //   width: Person.mageSize,
-        //   height: Person.mageSize
-        // }}
+        style={{
+          width: Person.mageSize,
+          height: Person.mageSize
+        }}
       />
     </div>
   );
