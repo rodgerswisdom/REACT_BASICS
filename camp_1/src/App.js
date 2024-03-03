@@ -15,20 +15,22 @@ const Person = {
 
 function myheader(){
   return(
-    <div className='nav'>
+   
       <ul>
         <li>Home</li>
         <li>Contact us</li>
         <li>About us</li>
       </ul>
-    </div>
+   
   );
 }
 
 function App() {
   return (
     <div className="App">
-      <myheader/>
+      <div>
+        <myheader />
+      </div>
       <h1>{Person.name}</h1>
      
         <h1>
