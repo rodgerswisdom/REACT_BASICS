@@ -21,20 +21,17 @@ function myheader(){
         <li>Contact us</li>
         <li>About us</li>
       </ul>
-   
   );
 }
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <myheader />
-      </div>
+      <myheader>
       <h1>{Person.name}</h1>
-     
+      
         <h1>
-          <Button />
+         
         </h1>
       <img 
         src ={Person.imageUrl}
